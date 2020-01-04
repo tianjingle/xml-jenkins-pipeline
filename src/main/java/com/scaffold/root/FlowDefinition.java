@@ -20,8 +20,7 @@ public class FlowDefinition {
     @XmlElement(name = "actions")
     private Actions actions;
 
-    @XmlElement(name = "discription")
-    private String description="";
+    private String discription="";
 
     private boolean keepDependencies=false;
 
@@ -31,7 +30,6 @@ public class FlowDefinition {
     @XmlElement(name = "definition")
     private Definition definition;
 
-    @XmlElement(name = "triggers")
     private String triggers;
 
     private boolean disabled=false;

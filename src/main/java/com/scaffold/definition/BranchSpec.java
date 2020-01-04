@@ -10,6 +10,5 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class BranchSpec {
 
-    @XmlElement(name = "name")
     private String name="*/master";
 }

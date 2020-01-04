@@ -8,9 +8,11 @@ jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只�
     <actions>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.0"/>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
+            <jobProperties></jobProperties>
             <triggers>
                 <string>org.jenkinsci.plugins.gwt.GenericTrigger</string>
             </triggers>
+            <options></options>
         </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
     </actions>
     <discription></discription>

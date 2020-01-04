@@ -31,6 +31,5 @@ public class Scm {
     @XmlElement(name = "submoduleCfg")
     private SubmoduleCfg submoduleCfg;
 
-    @XmlElement(name = "extensions")
     private String extensions="";
 }

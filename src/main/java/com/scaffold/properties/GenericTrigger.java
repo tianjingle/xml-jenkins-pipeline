@@ -14,7 +14,6 @@ public class GenericTrigger {
     @XmlAttribute(name = "plugin")
     private String plugin="generic-webhook-trigger@1.66";
 
-    @XmlElement(name = "spec")
     private String spec="";
 
     private boolean printPostContent=false;

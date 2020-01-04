@@ -14,6 +14,5 @@ public class GogsTrigger {
     @XmlAttribute(name = "plugin")
     private String plugin="gogs-webhook@1.0.15";
 
-    @XmlElement(name = "spec")
     private String spec="";
 }

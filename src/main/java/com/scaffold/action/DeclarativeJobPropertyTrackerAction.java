@@ -14,15 +14,12 @@ public class DeclarativeJobPropertyTrackerAction {
     @XmlAttribute(name = "plugin")
     private String plugin="pipeline-model-definition@1.5.0";
 
-    @XmlElement(name = "jobProperties")
-    private String jobProperties;
+    private String jobProperties="";
 
     @XmlElement(name = "triggers")
     private Triggers triggers;
 
-    @XmlElement(name = "parameters")
     private String parameters;
 
-    @XmlElement(name = "options")
-    private String options;
+    private String options="";
 }
