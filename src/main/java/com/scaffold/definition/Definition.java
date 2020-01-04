@@ -19,4 +19,8 @@ public class Definition {
 
     @XmlElement(name = "scm")
     private Scm scm;
+
+    private String ScriptPath="Jenkinsfile";
+
+    private boolean lightweight=true;
 }
