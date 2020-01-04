@@ -1,0 +1,3 @@
+## what is xml-jenkins-pipeline?
+jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只需要在我们的项目中放入jenkinsfile文件即可。jenkins构建项目的时候会自动去读取这里的jenkinsFile，但是jenkins众多模式中如何去采用这种模式呐？通过config.xml。
+这里就是提供一种config生成器，专门用来生成jenkins pipeline模式的config。这对第三方系统控制CI有比较大的作用，可以使得jenkins等工具变成整个系统网的一个组件。
