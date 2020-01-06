@@ -4,7 +4,7 @@ jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只�
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<flowDefinition plugin="workflow-job@2.36">
+<flow-definition plugin="workflow-job@2.36">
     <actions>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.0"/>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
@@ -12,10 +12,11 @@ jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只�
             <triggers>
                 <string>org.jenkinsci.plugins.gwt.GenericTrigger</string>
             </triggers>
+            <parameters></parameters>
             <options></options>
         </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
     </actions>
-    <discription></discription>
+    <description></description>
     <keepDependencies>false</keepDependencies>
     <properties>
         <org.jenkinsci.plugins.gogs.GogsProjectProperty plugin="gogs-webhook@1.0.15">
@@ -25,8 +26,14 @@ jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只�
         </org.jenkinsci.plugins.gogs.GogsProjectProperty>
         <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
             <triggers>
+                <org.jenkinsci.plugins.gogs.GogsTrigger plugin="gogs-webhook@1.0.15">
+                    <spec></spec>
+                </org.jenkinsci.plugins.gogs.GogsTrigger>
                 <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@1.66">
                     <spec></spec>
+                    <regexpFilterText></regexpFilterText>
+                    <regexpFilterExpression></regexpFilterExpression>
+                    <causeString>Generic Cause</causeString>
                     <printPostContent>false</printPostContent>
                     <printContributedVariables>false</printContributedVariables>
                     <token>123</token>
@@ -54,6 +61,7 @@ jenkins2.0之后，提供了jenkinsfile的可编程的构建流程。我们只�
         <ScriptPath>Jenkinsfile</ScriptPath>
         <lightweight>true</lightweight>
     </definition>
+    <triggers></triggers>
     <disabled>false</disabled>
-</flowDefinition>
+</flow-definition>
 ```
