@@ -20,7 +20,7 @@ public class GenericTrigger {
 
     private String regexpFilterExpression="";
 
-    private String causeString="";
+    private String causeString="Generic Cause";
 
     private boolean printPostContent=false;
 
