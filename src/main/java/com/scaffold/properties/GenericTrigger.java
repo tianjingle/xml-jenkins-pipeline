@@ -16,6 +16,12 @@ public class GenericTrigger {
 
     private String spec="";
 
+    private String regexpFilterText="";
+
+    private String regexpFilterExpression="";
+
+    private String causeString="";
+
     private boolean printPostContent=false;
 
     private boolean printContributedVariables=false;

@@ -8,7 +8,7 @@ import lombok.Data;
 import javax.xml.bind.annotation.*;
 
 @Data
-@XmlRootElement
+@XmlRootElement(name = "flow-definition")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class FlowDefinition {
 
@@ -20,7 +20,7 @@ public class FlowDefinition {
     @XmlElement(name = "actions")
     private Actions actions;
 
-    private String discription="";
+    private String description="";
 
     private boolean keepDependencies=false;
 
@@ -30,7 +30,7 @@ public class FlowDefinition {
     @XmlElement(name = "definition")
     private Definition definition;
 
-    private String triggers;
+    private String triggers="";
 
     private boolean disabled=false;
 }

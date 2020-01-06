@@ -19,7 +19,7 @@ public class DeclarativeJobPropertyTrackerAction {
     @XmlElement(name = "triggers")
     private Triggers triggers;
 
-    private String parameters;
+    private String parameters="";
 
     private String options="";
 }
