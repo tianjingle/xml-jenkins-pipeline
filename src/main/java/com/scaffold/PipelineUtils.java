@@ -102,6 +102,7 @@ public class PipelineUtils {
         Triggers2 triggers2=new Triggers2();
         GenericTrigger genericTrigger=new GenericTrigger();
         genericTrigger.setToken(token);
+        triggers2.setGogsTrigger(new GogsTrigger());
         triggers2.setGenericTrigger(genericTrigger);
         Properties properties=new Properties();
         properties.setGogsProjectProperty(gogsProjectProperty);
